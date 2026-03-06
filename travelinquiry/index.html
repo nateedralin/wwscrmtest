@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Inquiry</title>
+<link rel="stylesheet" href="styles.css">
+</head>
 
+<body>
+
+<div class="container">
+<h1>Travel Inquiry Form</h1>
+
+<form id="travelForm">
+
+<label>Name *</label>
+<input type="text" id="name" required>
+
+<label>Email *</label>
+<input type="email" id="email" required>
+
+<label>Phone</label>
+<input type="tel" id="phone">
+
+<label>Destination *</label>
+<input type="text" id="destination" required>
+
+<label>Travel Start Date *</label>
+<input type="date" id="startDate" required>
+
+<label>Travel End Date *</label>
+<input type="date" id="endDate" required>
+
+<label>Number of Travelers *</label>
+<input type="number" id="travelers" min="1" required>
+
+<label>Budget ($ approx total)</label>
+<input type="number" id="budget">
+
+<label>Notes</label>
+<textarea id="notes"></textarea>
+
+<button type="submit">Submit Inquiry</button>
+
+</form>
+
+<p id="message"></p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
